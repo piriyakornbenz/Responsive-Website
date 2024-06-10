@@ -2,5 +2,5 @@
 
 ## Link to website public
 ```
-docker-compose up
+https://mediplus-520aa.web.app/
 ```
