@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediplus</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <!-- topbar -->
+        <div class="topbar p-3 underline-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 pt-0">
+                        <ul class="topbar-left d-none"></ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="topbar-right d-flex flex-wrap justify-content-evenly my-auto">
+                            <li><a href="#"><i class="fa fa-phone"></i> +12 345 67890</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> support@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end topbar -->
+
+        <!-- navbar -->
+        <nav class="nav-bar underline-shadow" id="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- menu -->
+                    <ul class="menu" id="myMenu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                    <div class="ham-menu" onclick="toggleMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <!-- button -->
+                    <div class="button">
+                        <a href="contact.html" class="btn btn-primary">contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+
+    <!-- start slides -->
+    <section class="slides">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="slide-container">
+                <!-- slide 1 -->
+                <div class="carousel-item active" id="slide" data-bs-interval="2000"
+                    style="background-image: url('./img/slider.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-11" id="move-up">
+                                <div class="content-container slide-up">
+                                    <div class="text">
+                                        <h3>header</h3>
+                                        <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Assumenda maxime,
+                                            ut eius, deleniti iste similique minima reprehenderit, quisquam hic veniam
+                                            possimus
+                                            illum unde aspernatur incidunt. Facilis et odit labore quasi.</p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#promotion" class="btn btn-primary me-2">get promotion</a>
+                                        <a href="about.html" class="btn btn-dark">about us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div class="carousel-item" id="slide" data-bs-interval="2000"
+                    style="background-image: url('./img/slider2.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-11">
+                                <div class="content-container slide-up">
+                                    <div class="text">
+                                        <h3>header</h3>
+                                        <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Assumenda maxime,
+                                            ut eius, deleniti iste similique minima reprehenderit, quisquam hic veniam
+                                            possimus
+                                            illum unde aspernatur incidunt. Facilis et odit labore quasi.</p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#promotion" class="btn btn-primary me-2">get promotion</a>
+                                        <a href="about.html" class="btn btn-dark">about us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div class="carousel-item" id="slide" data-bs-interval="2000"
+                    style="background-image: url('./img/slider3.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-11">
+                                <div class="content-container slide-up">
+                                    <div class="text">
+                                        <h3>header</h3>
+                                        <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Assumenda maxime,
+                                            ut eius, deleniti iste similique minima reprehenderit, quisquam hic veniam
+                                            possimus
+                                            illum unde aspernatur incidunt. Facilis et odit labore quasi.</p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#promotion" class="btn btn-primary me-2">get promotion</a>
+                                        <a href="about.html" class="btn btn-dark">about us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- end slides -->
+
+    <!-- box -->
+    <section class="boxes mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-12 col-12 my-3">
+                    <div class="box">
+                        <h4>Emergency Cases</h4>
+                        <div class="detail py-4">
+                            <p class="limited-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                cupiditate similique nulla delectus vitae facilis officia quo facere, nisi perspiciatis
+                                id, tenetur ad reiciendis voluptatem ullam porro quas molestias et?</p>
+                        </div>
+                        <a href="#">learn more ></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 my-3">
+                    <div class="box">
+                        <h4>Doctors</h4>
+                        <div class="detail py-4">
+                            <p class="limited-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                cupiditate similique nulla delectus vitae facilis officia quo facere, nisi perspiciatis
+                                id, tenetur ad reiciendis voluptatem ullam porro quas molestias et?</p>
+                        </div>
+                        <a href="#">learn more ></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 my-3">
+                    <div class="box">
+                        <h4 class="pb-4">Opening Hours</h4>
+                        <div class="detail py-3">
+                            <p style="display: flex; justify-content: space-between;">Monday - Friday<span
+                                    style="text-align: end;">8.00-20.00</span></p>
+                            <p style="display: flex; justify-content: space-between;">Saturday<span
+                                    style="text-align: end;">10.00-18.00</span></p>
+                            <p style="display: flex; justify-content: space-between;">Sunday<span
+                                    style="text-align: end;">10.00-15.00</span></p>
+                        </div>
+                        <a href="#">learn more ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end box -->
+
+    <section>
+        <div class="container text-center" style="padding: 0 100px;">
+            <h3 style="margin-top: 100px;">We Are Always Ready To Help You & Your Family</h3>
+            <i class="fa-solid fa-heart-pulse" style="margin-top: 30px; font-size: 3rem; color: #1A76D1;"></i>
+            <p style="margin-top: 30px; color: #777;">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
+                aliquet. pretiumts</p>
+        </div>
+    </section>
+
+    <!-- icon -->
+    <section class="icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 mb-5">
+                    <div class="picture">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Emergency Help</h3>
+                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-5">
+                    <div class="picture">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Enriched Pharmecy</h3>
+                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="picture">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Medical Treatment</h3>
+                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end icon -->
+
+    <!-- static -->
+    <section class="static">
+        <div class="overlay">
+            <div class="container">
+                <div class="row mx-5">
+                    <div class="col-lg-3 col-md-3 col-6 mt-3 mb-3" id="static-flex">
+                        <div class="picture me-md-4">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="text">
+                            <h4 data-number="368">0</h4>
+                            <p>Hospital Rooms</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-3 mb-3" id="static-flex">
+                        <div class="picture me-md-4">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="text">
+                            <h4 data-number="28">0</h4>
+                            <p>Specialist Doctors</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-3 mb-3" id="static-flex">
+                        <div class="picture me-md-4">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="text">
+                            <h4 data-number="1698">0</h4>
+                            <p>Happy Patients</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-6 mt-3 mb-3" id="static-flex">
+                        <div class="picture me-md-4">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <div class="text">
+                            <h4 data-number="12">0</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end static -->
+
+    <!-- promotion -->
+    <section class="promotion" id="promotion" style="background-color: #F9F9F9; margin: 100px 0; padding: 50px 0;">
+        <div class="container">
+
+            <h3 class="text-center my-5">We Provide You The Best Treatment In Resonable Price</h3>
+            <p class="text-center" style="margin-bottom: 80px;">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                praesent aliquet. pretiumts</p>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 mb-3" id="padding">
+                    <div class="container promotion-container">
+                        <div class="picture text-center">
+                            <i class="fa-solid fa-scissors fa-rotate-270"></i>
+                        </div>
+                        <div class="header mb-5">
+                            <h3 class="text-center mb-4">Plastic Suggery</h3>
+                            <h4 class="text-center">$199<span>/ Per Visit</span></h4>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Lorem Ipsum Dolor Sit</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Cubitur Sollicitudin Fentum</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Nullam Interdum Enim</p>
+                            <p><i class="fa-solid fa-circle-xmark" style="color: #aaa;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Donec Ultricies Metus</p>
+                            <p><i class="fa-solid fa-circle-xmark" style="color: #aaa;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Pellentesque Eget Nibh</p>
+                            <p><i class="fa-solid fa-circle-xmark" style="color: #aaa;"></i></p>
+                        </div>
+                        <div class="button mt-4">
+                            <a href="#" class="btn btn-primary w-100">book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3" id="padding">
+                    <div class="container promotion-container">
+                        <div class="picture text-center">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <div class="header mb-5">
+                            <h3 class="text-center mb-4">Plastic Suggery</h3>
+                            <h4 class="text-center">$299<span>/ Per Visit</span></h4>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Lorem Ipsum Dolor Sit</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Cubitur Sollicitudin Fentum</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Nullam Interdum Enim</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Donec Ultricies Metus</p>
+                            <p><i class="fa-solid fa-circle-xmark" style="color: #aaa;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Pellentesque Eget Nibh</p>
+                            <p><i class="fa-solid fa-circle-xmark" style="color: #aaa;"></i></p>
+                        </div>
+                        <div class="button mt-4">
+                            <a href="#" class="btn btn-primary w-100">book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3" id="padding">
+                    <div class="container promotion-container">
+                        <div class="picture text-center">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="header mb-5">
+                            <h3 class="text-center mb-4">Plastic Suggery</h3>
+                            <h4 class="text-center">$399<span>/ Per Visit</span></h4>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Lorem Ipsum Dolor Sit</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Cubitur Sollicitudin Fentum</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Nullam Interdum Enim</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Donec Ultricies Metus</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="detail d-flex justify-content-between mb-2">
+                            <p>Pellentesque Eget Nibh</p>
+                            <p><i class="fa-solid fa-circle-check" style="color: #1a76d1;"></i></p>
+                        </div>
+                        <div class="button mt-4">
+                            <a href="#" class="btn btn-primary w-100">book now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end promotion -->
+
+    <!-- brand -->
+    <section class="brand">
+        <div class="overlay">
+            <div class="container">
+                <div class="slider row text-center">
+                    <div class="col-lg-3 col-md-3 col-3 mt-3 mb-3 justify-content-center align-items-center">
+                        <img src="./img/client1.png" alt="" style="width: 50%; height: 100%;">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-3 mt-3 mb-3 justify-content-center align-items-center">
+                        <img src="./img/client2.png" alt="" style="width: 50%; height: 100%;">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-3 mt-3 mb-3 justify-content-center align-items-center">
+                        <img src="./img/client3.png" alt="" style="width: 50%; height: 100%;">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-3 mt-3 mb-3 justify-content-center align-items-center">
+                        <img src="./img/client4.png" alt="" style="width: 50%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end brand -->
+
+    <!-- message -->
+    <section class="message">
+        <div class="container">
+            <h3 class="text-center my-5">We Are Always Ready To Help You. Book An Appointment</h3>
+            <p class="text-center" style="margin-bottom: 80px;">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                praesent aliquet. pretiumts</p>
+
+            <div class="row" style="padding: 0 40px;">
+                <div class="col-lg-6 col-md-6">
+                    <div class="message_input">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control mb-4" placeholder="Name" style="height: 50px; font-size: 1.5rem;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="form-control mb-4" placeholder="Email" style="height: 50px; font-size: 1.5rem;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="number" class="form-control mb-4" placeholder="Phone" style="height: 50px; font-size: 1.5rem;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="date" class="form-control mb-4" style="height: 50px; font-size: 1.5rem;">
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <textarea class="form-control mb-4" placeholder="write your message here..." style="height: 150px; font-size: 1.5rem;"></textarea>
+                                </div>
+                                <div class="col-lg-5">
+                                    <a href="index.html" class="btn btn-primary mb-4">Book an appointment</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" style="padding-left: 80px;">
+                    <img src="./img/contact-img.png" alt="" style="width: 400px;" class="img_input">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end message -->
+
+    <!-- signup -->
+    <section class="signup" style="background-color: #EDF2FF; padding: 80px 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h3 class="mb-4">Sign up for newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                </div>
+                <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control" placeholder="your email address" style="font-size: 1.5rem; height: 50px;">
+                    <a href="index.html" class="btn btn-primary ms-3 d-flex justify-content-center align-items-center" style="height: 50px;">subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end signup -->
+
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center" style="background-color: #1A76D1; padding: 30px 0;">
+        <p class="text-center" style="font-size: 1.4rem; color: #fff; margin: 0;">Copyright 2024 | All Rights Reserved</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-facebook-f" style="padding: 8px 11px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-google" style="padding: 8px 9px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </footer>
+
+    <!-- script -->
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

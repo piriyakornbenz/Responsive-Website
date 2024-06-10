@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediplus</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <!-- topbar -->
+        <div class="topbar p-3 underline-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 pt-0">
+                        <ul class="topbar-left d-none"></ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="topbar-right d-flex flex-wrap justify-content-evenly my-auto">
+                            <li><a href="#"><i class="fa fa-phone"></i> +12 345 67890</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> support@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end topbar -->
+
+        <!-- navbar -->
+        <nav class="nav-bar underline-shadow" id="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- menu -->
+                    <ul class="menu" id="myMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                    <div class="ham-menu" onclick="toggleMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <!-- button -->
+                    <div class="button">
+                        <a href="contact.html" class="btn btn-primary">contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+
+     <!-- about -->
+     <section class="about" style="margin: 0;">
+        <div class="overlay">
+            <div class="container">
+                <div class="text-center">
+                    <h3 style="color: #fff;">about us</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- content -->
+        <section class="content my-5 mx-2">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8 col-md-8 col-8">
+                        <img src="./img/about-img.jpg" class="w-100 border-none rounded-2" alt="">
+                        <h3 class="mt-5 text-center">About us</h3>
+                        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a ti incididunt ut labore et dolore to in magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in a in to in a consectetur.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna in a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod</p>
+                        <p class="mt-5">ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna to in aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua.</p>
+                        <p class="mt-5">ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod. dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.</p>
+                        <div class="share d-flex align-items-start mt-5">
+                            <p class="" style="font-size: 2rem; font-weight: 600;">share now </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#"><i class="fa-brands fa-facebook-f" style="color: #666; border: 1px solid; padding: 8px 11px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#"><i class="fa-brands fa-google" style="color: #666; border: 1px solid; padding: 8px 9px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#"><i class="fa-brands fa-twitter" style="color: #666; border: 1px solid; padding: 8px 9px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center"
+        style="background-color: #1A76D1; padding: 30px 0;">
+        <p class="text-center" style="font-size: 1.4rem; color: #fff; margin: 0;">Copyright 2024 | All Rights Reserved
+        </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-facebook-f" style="padding: 8px 11px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-google" style="padding: 8px 9px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </footer>
+
+    <!-- script -->
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

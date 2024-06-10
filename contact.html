@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediplus</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <!-- topbar -->
+        <div class="topbar p-3 underline-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 pt-0">
+                        <ul class="topbar-left d-none"></ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="topbar-right d-flex flex-wrap justify-content-evenly my-auto">
+                            <li><a href=""><i class="fa fa-phone"></i> +12 345 67890</a></li>
+                            <li><a href=""><i class="fa fa-envelope"></i> support@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end topbar -->
+
+        <!-- navbar -->
+        <nav class="nav-bar underline-shadow" id="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- menu -->
+                    <ul class="menu" id="myMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">contact us</a></li>
+                    </ul>
+                    <div class="ham-menu" onclick="toggleMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <!-- button -->
+                    <div class="button">
+                        <a href="" class="btn btn-primary">contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+
+    <!-- contact -->
+    <section class="contact" style="margin: 0;">
+        <div class="overlay">
+            <div class="container">
+                <div class="text-center">
+                    <h3 style="color: #fff;">contact us</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- form -->
+    <section class="form my-5">
+        <div class="container" style="padding: 0 50px;">
+            <div class="row border rounded-4 shadow">
+                <div class="col-lg-6 col-md-6">
+                    <div class="featured-image">
+                        <img src="./img/signup-bg.jpg" class="w-100 my-3 mx-1 border-none rounded-4">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center py-3 px-5">
+                    <h4 class="text-center mb-lg-4 mb-md-2" style="font-size: 2.5rem;">Contact us</h4>
+                    <input type="text" class="form-control mb-0 mb-lg-3 mt-3" placeholder="Name" style="font-size: 1.2rem;">
+                    <input type="text" class="form-control mb-0 mb-lg-3 mt-3" placeholder="Email" style="font-size: 1.2rem;">
+                    <textarea class="form-control mb-0 mb-lg-3 mt-3" placeholder="write your message here..." style="font-size: 1.2rem; max-height: 100px; height: auto;"></textarea>
+                    <a href="" class="btn btn-primary mt-3 w-100">send</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end form -->
+
+    <!-- box -->
+    <section class="boxes my-5">
+        <div class="container">
+            <div class="row" style="padding: 0 30px;">
+
+                <div class="col-lg-4 col-md-12 col-12 my-3">
+                    <div class="box d-flex justify-content-center align-items-center" style="height: 100px;">
+                        <div class="icon">
+                            <i class="fa fa-phone" style="font-size: 4rem; color: #fff; padding: 0;"></i>
+                        </div>
+                        <div class="text ms-5">
+                            <h4 style="font-size: 1.5rem;">+12 345 67890</h4>
+                            <p>admin ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 my-3">
+                    <div class="box d-flex justify-content-center align-items-center" style="height: 100px;">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope" style="font-size: 4rem; color: #fff;"></i>
+                        </div>
+                        <div class="text ms-5">
+                            <h4 style="font-size: 1.5rem;">support@email.com</h4>
+                            <p>admin ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 my-3">
+                    <div class="box d-flex justify-content-center align-items-center" style="height: 100px;">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot" style="font-size: 4rem; color: #fff;"></i>
+                        </div>
+                        <div class="text ms-5">
+                            <h4 style="font-size: 1.5rem;">2 Fir e Brigade Road</h4>
+                            <p>Chittagonj, Lakshmipur</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end box -->
+
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center" style="background-color: #1A76D1; padding: 30px 0;">
+        <p class="text-center" style="font-size: 1.4rem; color: #fff; margin: 0;">Copyright 2024 | All Rights Reserved</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-facebook-f" style="padding: 8px 11px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-google" style="padding: 8px 9px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
