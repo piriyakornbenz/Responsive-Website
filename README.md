@@ -1,5 +1,7 @@
 # Responsive Website
 
+Create responsive website with using:
+
 - HTML
 * CSS
 + JavaScript
