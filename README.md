@@ -1,4 +1,4 @@
-# HTML-CSS-JS-BOOTSTRAP5
+# Responsive Website
 
 ## Link to website public
 ```
