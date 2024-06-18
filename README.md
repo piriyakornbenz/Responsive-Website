@@ -6,7 +6,7 @@ Create responsive website with using:
 * CSS
 + JavaScript
 
-
+<br>
 
 ## Link to website public
 
