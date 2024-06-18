@@ -1,5 +1,9 @@
 # Responsive Website
 
+- HTML
+* CSS
++ JavaScript
+
 ## Link to website public
 ```
 https://mediplus-520aa.web.app/
